@@ -1,0 +1,109 @@
+@media (min-width: 727px) {
+    .main {
+        &__card-wrap {
+            display: flex;
+            gap: 23px;
+            padding-bottom: 0px;
+            max-width: 1106px;
+            /* width: 95vw; */
+            justify-content: space-between;
+
+        }
+        &__card-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__title-card {
+            
+            padding: 0px;
+            span {
+                display: none;
+            }
+        }
+        &__card-inner {
+            padding: 9px 0px 26px 0px;
+        }
+        &__img {
+            margin-bottom: 0px;
+            flex-basis: 473px;
+            border-radius: 16px 0px 0px 16px;
+            
+        }
+        &__timing-buttons{
+            margin-bottom: 7px;
+            
+        }
+        &__bottom-card {
+            justify-content: flex-start;
+            gap: 13px;
+        }
+        &__bottom-btn {
+            width: 187px;
+            height: 52px;
+        }
+    }
+}
+@media (min-width: 1000px) {
+    .main {
+        &__img {
+            width: 473px;
+        }
+        &__title-card {
+            line-height: 1.3;
+            font-family: "OpenSans-Regular", sans-serif;
+            width: 535px;
+            color: #000000;
+        }
+        &__card-inner {
+            flex-basis: 612px;
+        }
+        &__timing-buttons {
+            display: none;
+        }
+        &__list {
+            position: relative;
+        }
+        &__timing-buttons-desktop {
+            position: absolute;
+            bottom: 0;
+            left: 49%;
+        }
+    }
+}
+@media (max-width: 999px) {
+    .main {
+        &__timing-buttons-desktop {
+            display: none;
+        }
+        &__timing-btn {
+            &_hide {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1058px) {
+    .main {
+        &__timing-btn {
+            &_hide {
+                display: none;
+            }
+        }
+        
+        
+    }
+}
+@media (min-width: 1058px) {
+    .main {
+        &__timing-btn {
+            &_hide {
+                display: none;
+            }
+            &_active {
+                display: inline-block;
+            }
+        }
+        
+    }
+}

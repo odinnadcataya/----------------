@@ -1,0 +1,46 @@
+.main {
+    display: flex;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 204, 203, 0.067);
+}
+.inner {
+    background-color: #80801f31;
+    padding: 15px;
+}
+#route {
+    margin-bottom: 15px;
+    width: 200px;
+}
+.time-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+label {
+    width: fit-content;
+}
+#time,
+.route-dop {
+    width: 200px;
+}
+.route-dop {
+    display: none;
+}
+.hide {
+    display: none;
+}
+
+.conclusion {
+    display: none;
+}
+.active {
+    display: block;
+}

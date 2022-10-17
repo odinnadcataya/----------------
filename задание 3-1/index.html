@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>phpMyAdmin</title>
+</head>
+
+<body>
+    <main class="main">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>event_id</th>
+                    <th>event_date</th>
+                    <th>ticket_adult_price</th>
+                    <th>ticket_adult_quantity</th>
+                    <th>ticket_kid_price</th>
+                    <th>ticket_kid_quantity</th>
+                    <th>ticket_concession_price</th>
+                    <th>ticket_concession_quantity</th>
+                    <th>ticket_group_price</th>
+                    <th>ticket_group_quantity</th>
+                    <th>barcode</th>
+                    <th>user_id</th>
+                    <th>equal_price</th>
+                    <th>created</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>003</td>
+                    <td>2021-08-21 13:00:00</td>
+                    <td>700</td>
+                    <td>2</td>
+                    <td>450</td>
+                    <td>3</td>
+                    <td>100</td>
+                    <td>4</td>
+                    <td>500</td>
+                    <td>0</td>
+                    <td>{<br>
+                        "0":11111111<br>
+                        "1":22222222<br>
+                        "2":33333333<br>
+                        "4":44444444<br>
+                        }
+                        </td>
+                    <td>00451</td>
+                    <td>3150</td>
+                    <td>2021-01-11 13:22:09</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>006</td>
+                    <td>2021-07-29 18:00:00</td>
+                    <td>1000</td>
+                    <td>0</td>
+                    <td>800</td>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>500</td>
+                    <td>0</td>
+                    <td>22222222</td>
+                    <td>00364</td>
+                    <td>1600</td>
+                    <td>2021-01-12 16:62:08</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>003</td>
+                    <td>2021-08-15 17:00:00</td>
+                    <td>700</td>
+                    <td>4</td>
+                    <td>450</td>
+                    <td>3</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>500</td>
+                    <td>0</td>
+                    <td>33333333</td>
+                    <td>00015</td>
+                    <td>4150</td>
+                    <td>2021-01-13 10:08:45</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 1. Считаю объективным добавить еще столбцы в таблицу с соответствующими названиями (льготные и груповые билеты), получается 4 стобца название и цена. 
+        2. У каждого билета приобретенного одним покупателем будет свой баркод, который предлагаю хранить в формате JSON(объект JSON), так как это упростит передачу файлов в базу данных.-->
+    </main>
+</body>
+
+</html>

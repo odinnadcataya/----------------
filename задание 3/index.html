@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ticket</title>
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <div class="inner">
+                <select name="route" id="route">
+                    <option value="-" class="hide">-</option>
+                    <option value="из A в B">из A в B</option>
+                    <option value="из B в A">из B в A</option>
+                    <option value="из A в B и обратно в А">из A в B и обратно в А</option>
+                </select>
+                
+                <!--  -->
+                <div class="time-box">
+                    <label for="time">Выберите время</label>
+                    <select name="time" id="time">
+                        <option value="-" class="hide">-</option>
+                        <option class="timeOption" value="18:00(из A в B)">18:00(из A в B)</option>
+                        <option class="timeOption" value="18:30(из A в B)">18:30(из A в B)</option>
+                        <option class="timeOption" value="18:45(из A в B)">18:45(из A в B)</option>
+                        <option class="timeOption" value="19:00(из A в B)">19:00(из A в B)</option>
+                        <option class="timeOption" value="19:15(из A в B)">19:15(из A в B)</option>
+                        <option class="timeOption" value="21:00(из A в B)">21:00(из A в B)</option>
+                        <option class="timeOption" value="18:30(из B в A)">18:30(из B в A)</option>
+                        <option class="timeOption" value="18:45(из B в A)">18:45(из B в A)</option>
+                        <option class="timeOption" value="19:00(из B в A)">19:00(из B в A)</option>
+                        <option class="timeOption" value="19:15(из B в A)">19:15(из B в A)</option>
+                        <option class="timeOption" value="19:35(из B в A)">19:35(из B в A)</option>
+                        <option class="timeOption" value="21:50(из B в A)">21:50(из B в A)</option>
+                        <option class="timeOption" value="21:55(из B в A)">21:55(из B в A)</option>
+                    </select>
+                    <select name="route" class="route-dop" value="">
+                        <option value="Выберите время" class="hide">Выберите время</option>
+                        <option value="18:30" class="hide" >18:30(из B в A)</option>
+                        <option value="18:45" class="hide" >18:45(из B в A)</option>
+                        <option value="19:00" class="hide" >19:00(из B в A)</option>
+                        <option value="19:15" class="hide" >19:15(из B в A)</option>
+                        <option value="19:35" class="hide" >19:35(из B в A)</option>
+                        <option value="21:50" class="hide" >21:50(из B в A)</option>
+                        <option value="21:55" class="hide" >21:55(из B в A)</option>
+                    </select>
+                    <label for="num">Количество билетов</label>
+                    <input id="num" type="number">
+                    <button class="btn-result">Посчитать</button>
+                    <div class="conclusion">Вы выбрали <span id="sumTicket"></span> по маршруту <span id="direction"></span> стоимостью <span id="priceAll"></span>.<br>
+                    Это путешествие займет у вас 50 минут.<br>
+                    Теплоход отправляется в <span id="start"></span>, а прибудет в <span id="end"></span>.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
